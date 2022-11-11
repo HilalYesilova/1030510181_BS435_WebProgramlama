@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10ace754-f7cb-4a54-b8ba-bc9c224519ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/webp/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Cars.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/webp/Cars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/webp/Cars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/webp/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/webp/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/webp/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/webp/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/webp/InsertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/webp/InsertTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +29,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Github-Repos/1030510181_BS435_WebProgramlama/odev01",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Github-Repos/1030510181_BS435_WebProgramlama/odev01&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="odev01" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -74,6 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1667741522604</updated>
       <workItem from="1667741523837" duration="2891000" />
+      <workItem from="1667820937213" duration="666000" />
+      <workItem from="1668147915473" duration="62000" />
     </task>
     <servers />
   </component>

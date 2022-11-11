@@ -1,10 +1,11 @@
 package org.webp;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.eclipse.persistence.jpa.jpql.parser.DateTime;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 @Table(name = "CARS")
 @Entity
@@ -21,8 +22,7 @@ public class Cars {
     private String Name;
 
     @Column(name = "CarModelYear")
-    @DateTimeFormat("dd/MM/yyyy")
-    private Date CarModelYear;
+    private String CarModelYear;
 
     @Column(name = "CarClass")
     private String CarClass;
@@ -35,7 +35,7 @@ public class Cars {
     }
 
     public void setCarID(Long CarID) {
-        this.CarID = id;
+        this.CarID = CarID;
     }
 
     public String getName() {
@@ -46,7 +46,7 @@ public class Cars {
         this.Name = Name;
     }
 
-    public Date getCarModelYear() {
+    public String getCarModelYear() {
         return CarModelYear;
     }
 

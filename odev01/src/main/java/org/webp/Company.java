@@ -1,7 +1,8 @@
 package org.webp;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 @Table(name = "COMPANY")
 @Entity
@@ -51,7 +52,7 @@ public class Company {
     }
 
     public void setCarID(String CarID) {
-        this.CarID = CarID;
+        this.CarID = Long.valueOf(CarID);
     }
 
     public String getCompanyCiy() {
@@ -67,7 +68,7 @@ public class Company {
     }
 
     public void setCarLimit(String CarLimit) {
-        this.CarLimit = CarLimit;
+        this.CarLimit = Long.valueOf(CarLimit);
     }
 
 }

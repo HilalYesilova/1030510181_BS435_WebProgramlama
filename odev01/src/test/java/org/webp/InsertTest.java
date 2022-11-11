@@ -19,15 +19,12 @@ public class InsertTest {
 
     @BeforeEach
     public void init() {
-        //her bir test calismadan once BeforeEach calistirilir
         factory = Persistence.createEntityManagerFactory("Hibernate");
         em = factory.createEntityManager();
     }
 
     @AfterEach
     public void tearDown() {
-        //her bir test calistiktan sonra BeforeEach calistirilir
-
         em.close();
         factory.close();
     }
@@ -53,7 +50,7 @@ public class InsertTest {
     public void insertCar() {
 
         Cars car = new Cars();
-        car.setCarID(101);
+        car.setCarID(101L);
         car.setName("AUDI");
 
         boolean persisted = persistInATransaction(car);
@@ -64,7 +61,7 @@ public class InsertTest {
     public void insertCompany() {
 
         Company company = new Company();
-        company.setCompanyID(12);
+        company.setCompanyID(12L);
         company.setName("Hilal AŞ");
 
         boolean persisted = persistInATransaction(company);
@@ -75,7 +72,7 @@ public class InsertTest {
     public void insertDriver() {
 
         Driver driver = new Driver();
-        driver.ID(1);
+        driver.setID(0151L);
         driver.setName("Hilal Yeşilova");
         driver.setDriverLicense("ABC0123");
 
@@ -83,12 +80,12 @@ public class InsertTest {
         assertTrue(persisted);
 
         Driver driver2 = new Driver();
-        driver2.ID(1);
+        driver2.setID(1884L);
         driver2.setName("Yeşilova Hilal");
         driver2.setDriverLicense("123ABC");
 
-        boolean persisted = persistInATransaction(driver);
-        assertTrue(persisted); //hata alırız aynı id'ye sahip bir sürücü mevcuttur.
+        boolean persisted2 = persistInATransaction(driver);
+        assertTrue(persisted2); //hata alırız aynı id'ye sahip bir sürücü mevcuttur.
 
     }
 

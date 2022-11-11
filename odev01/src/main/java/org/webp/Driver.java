@@ -1,10 +1,9 @@
 package org.webp;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 @Table(name = "Driver")
 @Entity
@@ -63,7 +62,7 @@ public class Driver {
     }
 
     public void setCarID(String CarID) {
-        this.CarID = CarID;
+        this.CarID = Long.valueOf(CarID);
     }
 
     public String getDriverLicense() {

@@ -16,14 +16,6 @@
 
 
     <dependencies>
-        <!--
-            JEE için
-            <scope>provided</scope>
-            oldukça önemlidir.
-            Anlamı bu kütüphaneler derleme ve testte gerekli iken WAR/JAR dosyasında bulunmayacaktır.
-            Neden? Çünkü JEE container'ları zaten bunları barındırmaktadır. Ancak, hangi containerı kullanacağınıza göre
-            bu da değişmektedir. Biz Wildfly kullanacağız.
-        -->
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
@@ -88,6 +80,12 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${version.junit}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
